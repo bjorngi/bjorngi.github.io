@@ -24723,7 +24723,7 @@ exports = module.exports = __webpack_require__(92)(undefined);
 
 
 // module
-exports.push([module.i, "html {\n    /* background-color: #009682; */\n    background-color: #f3f3f3;\n}\n\na {\n    text-decoration: none;\n    color: inherit;\n}\n\na:visited {\n    color: inherit;\n}\n\n.loading {\n    display: flex;\n    justify-content: center;\n    font-size: 2em;\n    align-self: center;\n    align-items: center;\n    min-height: 30rem;\n}\n\n.repositories {\n    display: flex;\n    flex-flow: row wrap;\n}\n\n.repository {\n    display: flex;\n    flex: 1 1 25%;\n    flex-direction: column;\n    box-sizing: border-box;\n    border-style: solid;\n    border-color: #ccc;\n    border-width: 1px;\n    padding: 1em;\n    height: 15em;\n}\n\n.repository .header {\n    display: flex;\n    flex:none;\n    border-bottom-style: solid;\n    border-bottom-width: 2px;\n    border-bottom-color: #009682;\n}\n\n.repository .header:hover {\n    font-size: 1.2em;\n}\n\n.repository .header .key-info {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n\n.repository .header .key-info > .user {\n}\n\n.repository .header .key-info > .name {\n    font-size: 1.3em;\n    font-weight: bolder;\n}\n\n.repository .description {\n    flex: auto;\n    flex-grow: 1;\n    max-height: 5em;\n    padding-top: 0.5em;\n    overflow: hidden;\n}\n\n\n.repository .gravatar {\n    margin: 0 0.5rem 0.5rem 0;\n    border-radius: 10%;\n    display: block;\n    max-height: 4em;\n    max-width: 4em;\n}\n\n.repository > .top {\n    flex-grow: 1;\n}\n\n.repository > .bottom {\n}\n\n\n.repository .stats {\n    display: flex;\n    justify-content: space-around;\n    min-height: 1em;\n    align-items: center;\n}\n\n.repository .stats * {\n    display: table-cell;\n    vertical-align: text-bottom;\n}\n\n.repository .stats > .stars {\n    fill: #ff9800;\n}\n\n.repository .stats > .issues {\n    fill: #f44336;\n}\n\n.repository .stats > .forks {\n    fill: #2196f3;\n}\n\n.pagination {\n    display: flex;\n    justify-content: center;\n}\n\n.pagination .button {\n    user-select: none;\n    color: #009682;\n    cursor: pointer;\n    text-align: center;\n    width: 1em;\n    height: 1em;\n    margin: 0.3em;\n    font-size: 1.8em;\n}\n\n.pagination .button.active {\n    border-color: #009682;\n    border-bottom-style: solid;\n    border-bottom-width: 2px;\n}\n\n", ""]);
+exports.push([module.i, "html {\n    /* background-color: #009682; */\n    background-color: #f3f3f3;\n}\n\na {\n    text-decoration: none;\n    color: inherit;\n}\n\na:visited {\n    color: inherit;\n}\n\n.loading {\n    display: flex;\n    justify-content: center;\n    font-size: 2em;\n    align-self: center;\n    align-items: center;\n    min-height: 30rem;\n}\n\n.repositories {\n    display: flex;\n    flex-flow: row wrap;\n}\n\n.repository {\n    display: flex;\n    flex: 1 1 25%;\n    flex-direction: column;\n    box-sizing: border-box;\n    border-style: solid;\n    border-color: #ccc;\n    border-width: 1px;\n    padding: 1em;\n    height: 15em;\n}\n\n.repository .header {\n    display: flex;\n    flex:none;\n    border-bottom-style: dotted;\n    border-bottom-width: 2px;\n    border-bottom-color: #009682;\n}\n\n.repository .header:hover {\n    border-bottom-style: solid;\n}\n\n.repository .header .key-info {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n\n.repository .header .key-info > .user {\n}\n\n.repository .header .key-info > .name {\n    font-size: 1.3em;\n    font-weight: bolder;\n}\n\n.repository .description {\n    flex: auto;\n    flex-grow: 1;\n    max-height: 5em;\n    padding-top: 0.5em;\n    overflow: hidden;\n}\n\n\n.repository .gravatar {\n    margin: 0 0.5rem 0.5rem 0;\n    border-radius: 10%;\n    display: block;\n    max-height: 4em;\n    max-width: 4em;\n}\n\n.repository > .top {\n    flex-grow: 1;\n}\n\n.repository > .bottom {\n}\n\n\n.repository .stats {\n    display: flex;\n    justify-content: space-around;\n    min-height: 1em;\n    align-items: center;\n}\n\n.repository .stats * {\n    display: table-cell;\n    vertical-align: text-bottom;\n}\n\n.repository .stats > .stars {\n    fill: #ff9800;\n}\n\n.repository .stats > .issues {\n    fill: #f44336;\n}\n\n.repository .stats > .forks {\n    fill: #2196f3;\n}\n\n.pagination {\n    display: flex;\n    justify-content: center;\n}\n\n.pagination .button {\n    user-select: none;\n    color: #009682;\n    cursor: pointer;\n    text-align: center;\n    width: 1em;\n    height: 1em;\n    margin: 0.3em;\n    font-size: 1.8em;\n}\n\n.pagination .button.active {\n    border-color: #009682;\n    border-bottom-style: solid;\n    border-bottom-width: 2px;\n}\n\n", ""]);
 
 // exports
 
@@ -25944,17 +25944,14 @@ var Stats = function Stats(_ref2) {
       'div',
       { className: 'forks' },
       _react2.default.createElement(_ic_call_split_black_18px2.default, { height: 32, width: 32 }),
-      '2323'
+      forks
     ),
     _react2.default.createElement(
       'div',
       { className: 'issues' },
       _react2.default.createElement(_ic_warning_black_24px2.default, { height: 32, widht: 32 }),
-      _react2.default.createElement(
-        'span',
-        { className: 'stat' },
-        openIssues
-      )
+      ' ',
+      openIssues
     )
   );
 };
@@ -25991,7 +25988,8 @@ var Repository = function Repository(_ref3) {
       { className: 'bottom' },
       _react2.default.createElement(Stats, {
         stars: stars,
-        openIssues: openIssues })
+        openIssues: openIssues,
+        forks: forks })
     )
   );
 };
